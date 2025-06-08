@@ -1,0 +1,88 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo y texto */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px;
+}
+
+/* Contenedor central */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Filas con flex */
+.row {
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid #222;
+}
+
+/* Cabeceras */
+#biblioteca .col{
+  color: #ff8c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+#album .col{
+  color: #ff8c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+#recom .col{
+  color: #ff8c00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+/*Fin Cabeceras*/
+
+/* Títulos */
+#titulo .col-5,
+#titulo .col-2 {
+  font-size: 1.5rem;
+}
+
+/* Saltos de colores */
+.row:nth-child(odd):not(:first-child):not(:nth-child(2)) {
+  background-color: #111;
+}
+
+/* Transformación */
+.row.song-row {
+  transition: transform 0.2s ease;
+}
+
+.row.song-row:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+  position: relative;
+}
+/* Fin Transformación*/
+
+/* Play */
+.play-btn {
+  margin-right: 8px;
+  font-size: 1.1rem;
+  color: #ff8c00;
+}
+
+/* Imagenes */
+img {
+  width: 160px;
+  height: auto; 
+  margin-bottom: 8px;
+}
