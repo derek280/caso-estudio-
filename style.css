@@ -1,0 +1,200 @@
+
+.header-container {
+    background-color: #111111b6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+  .titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 600; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+    color: rgb(213, 153, 13); 
+  }
+  
+ 
+  .titulo {
+    margin: 0;
+  }
+  
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  
+  .icono-casa,
+  .icono-libros,
+  .icono-lupa {
+    width: 24px;
+    height: auto;
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .icono-casa:hover,
+  .icono-libros:hover,
+  .icono-lupa:hover {
+    transform: scale(1.2);
+   
+  }
+
+.carousel-img {
+    max-width: 400px;   
+    height: auto;
+    border-radius: 10px; 
+ }
+
+ 
+.carousel-img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+body{
+    background-color: rgba(0, 0, 0, 0.931);
+
+}
+.row2{
+    
+    text-align: center;
+    
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    color: rgb(240, 245, 243);
+    padding-left: 10px;
+}
+
+.card{
+    background-color: black;
+    color: rgb(246, 246, 247);
+}
+
+.card-header{
+    padding: 10px;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: contain;
+    padding: 10px;         
+  }
+  
+  .card-img-top:hover{
+    transform: scale(1.2);
+    
+  }
+
+  .music-footer {
+    background-color: #121212;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 60px;
+    z-index: 1000;
+  }
+  
+  .song-info {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  
+  .player-controls {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .control-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .control-btn img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .control-btn:hover img {
+    transform: scale(1.2);
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .current-time,
+  .total-time {
+    font-size: 12px;
+    width: 40px;
+    text-align: center;
+    user-select: none;
+  }
+  
+  .bar {
+    flex: 1;
+    height: 6px;
+    background-color: #333;
+    border-radius: 3px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .fill {
+    height: 100%;
+    background-color: #b91d59;
+    width: 30%; 
+    transition: width 0.3s ease;
+  }
+  
+  .volume {
+    flex: 0.3;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
